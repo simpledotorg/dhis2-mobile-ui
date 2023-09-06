@@ -123,7 +123,7 @@ fun BottomSheetScreen() {
                                     LegendDescriptionData(
                                         SurfaceColor.CustomGray,
                                         "Lorem fistrum torpedo está la cosa muy malar diodeno" +
-                                                " se calle ustée ahorarr al ataquerl condemor a wan.",
+                                                " se calle ustée ahorarr al ataquerl condemor a wan. ",
                                         IntRange(120, 1000),
                                     ),
                                 ),
@@ -133,7 +133,7 @@ fun BottomSheetScreen() {
                             ButtonBlock(
                                 primaryButton = {
                                     Button(
-                                        style = ButtonStyle.KEYBOARDKEY,
+                                        style = ButtonStyle.FILLED,
                                         enabled = true,
                                         text = "Accept",
                                         onClick = {
@@ -144,7 +144,7 @@ fun BottomSheetScreen() {
                                 },
                                 secondaryButton = {
                                     Button(
-                                        style = ButtonStyle.KEYBOARDKEY,
+                                        style = ButtonStyle.FILLED,
                                         enabled = true,
                                         text = "Dismiss",
                                         onClick = {
@@ -154,7 +154,8 @@ fun BottomSheetScreen() {
                                     )
                                 },
                             )
-                        }
+                        },
+                        onDismiss = { showBottomSheetShell = !showBottomSheetShell }
                     )
                 }
             }
