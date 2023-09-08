@@ -57,7 +57,7 @@ fun App() {
 
 @Composable
 fun Main() {
-    val currentScreen = remember { mutableStateOf(Components.INPUT_LETTER) }
+    val currentScreen = remember { mutableStateOf(Components.BOTTOM_SHEET) }
     var expanded by remember { mutableStateOf(false) }
 
     Column(
