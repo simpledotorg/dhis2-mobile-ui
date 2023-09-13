@@ -7,15 +7,12 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Cancel
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
-import org.hisp.dhis.mobile.ui.designsystem.component.InputShellState.*
-import org.hisp.dhis.mobile.ui.designsystem.component.Orientation.*
+import org.hisp.dhis.mobile.ui.designsystem.component.InputShellState.DISABLED
+import org.hisp.dhis.mobile.ui.designsystem.component.InputShellState.UNFOCUSED
+import org.hisp.dhis.mobile.ui.designsystem.component.Orientation.HORIZONTAL
+import org.hisp.dhis.mobile.ui.designsystem.component.Orientation.VERTICAL
 
 @Composable
 fun RadioButtonInput(
@@ -56,6 +53,7 @@ fun RadioButtonInput(
                     state = state,
                     onSelectionChanged = onSelectionChanged,
                 )
+
                 VERTICAL -> RadioButtonInputColumn(
                     radioButtonData = radioButtonData,
                     state = state,
