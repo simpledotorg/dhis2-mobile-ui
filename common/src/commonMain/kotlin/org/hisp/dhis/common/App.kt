@@ -42,6 +42,7 @@ import org.hisp.dhis.common.screens.InputTextScreen
 import org.hisp.dhis.common.screens.LegendDescriptionScreen
 import org.hisp.dhis.common.screens.LegendScreen
 import org.hisp.dhis.common.screens.ProgressScreen
+import org.hisp.dhis.common.screens.RadioButtonInputScreen
 import org.hisp.dhis.common.screens.RadioButtonScreen
 import org.hisp.dhis.common.screens.SectionScreen
 import org.hisp.dhis.common.screens.SupportingTextScreen
@@ -129,6 +130,7 @@ fun Main() {
             Components.INPUT_INTEGER -> InputIntegerScreen()
             Components.INPUT_NUMBER -> InputNumberScreen()
             Components.INPUT_LETTER -> InputLetterScreen()
+            Components.RADIO_BUTTON_INPUT -> RadioButtonInputScreen()
         }
     }
 }
